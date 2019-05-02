@@ -291,6 +291,9 @@ h2 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-family: 'Yeseva One';
+    margin-top: 20px;
+    line-height: 1.1;
+    color: inherit;
 }
 
 .eternal1 {
@@ -306,12 +309,12 @@ h2 {
     display: flex;
     align-items: center;
     margin: 10px;
-    flex-basis: 250px
     flex-grow: 1;
+    flex-basis: 250px;
 }
 
 .card img {
-    width: 300px;
+    width: 239px;
     border-radius: 2px;
 }
 
@@ -334,13 +337,16 @@ h2 {
 
 @media(min-width: 991px) {
   .nav-container {
-    margin: 0 120px;
+    margin: 0 100px ;
   }
 }
 
 @media(max-width: 768px) {
   .nav-container {
-    margin: 0 -5px;
+    margin-top: 10 -5px;
+  }
+  .nav-link {
+    padding: 8px;
   }
 }
 
@@ -348,7 +354,7 @@ h2 {
   .eternal .row-two-items {
     display: block;
   }
-
+}
   .eternal .row-two-items .row-item:first-child {
     width: 100%;
     margin-bottom: 10px;
@@ -363,3 +369,29 @@ h2 {
     margin-bottom: 0;
   }
 }
+
+h2.product-title {
+    font-family: 'Yeseva One';
+    position: relative;
+    margin-bottom: 22px;
+}
+
+
+h2.product-title span {
+    background: #fff;
+    padding-right: 20px;
+    z-index: 1;
+}
+
+h2.product-title:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background: #e1e1e1;
+    z-index: -1;
+}
+
