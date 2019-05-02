@@ -3,19 +3,39 @@ p {
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.container {
+/*.container {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
   width: 1170px;
-}
+}*/
 
 .nav-container {
-  margin: 0 120px;
   position: relative;
-  box-sizing: border-box;
+  @media(min-width: 991px) {
+    margin: 0 120px;
+  }
+  @media(max-width: 768px) {
+    margin: 0 -5px;
+  }
 }
+
+@media(max-width: 768px) {
+  .row-two-items .row-item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .row-two-items .row-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .row-two-items > .row-item > .row-two-items > .row-item {
+    margin-bottom: 0;
+  }
+}
+
 
 .wrapper-white {
   display: flex;
@@ -60,7 +80,7 @@ p {
   justify-content: space-around;
   -webkit-box-align: center;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   padding-top: 15px;
   border-top: 1px solid #333333;
   padding-left: 0;
@@ -223,8 +243,13 @@ hr.vr {
 
 .eternal .row-two-items .row-item:first-child {
     position: relative;
-    width: calc(117% - 5px);
+    width: calc(50% - 5px);
     margin-right: 10px;
+}
+
+.eternal .row-two-items .row-item:last-child {
+    position: relative;
+    width: calc(50% - 5px);
 }
 
 .eternal .row-two-items {
@@ -249,7 +274,7 @@ hr.vr {
     font-family: 'Yeseva One';
     text-align: center;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 25px;
     margin-top: 20px;
     margin-bottom: 10px;
     line-height: 1.1;
@@ -258,7 +283,7 @@ hr.vr {
 
 .eternal .eternal-frame p {
     text-align: center;
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 100;
 }
 
