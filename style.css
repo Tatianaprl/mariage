@@ -339,6 +339,27 @@ h2 {
   .nav-container {
     margin: 0 100px ;
   }
+  .rappel p {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 13px;
+    margin-bottom: 0px;
+  }
+  .contact p {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    justify-content: space-around;
+    padding: 0px;
+    margin-bottom: 0px;
+  }
 }
 
 @media(max-width: 768px) {
@@ -347,6 +368,28 @@ h2 {
   }
   .nav-link {
     padding: 8px;
+  }
+  .rappel p {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 13px;
+    margin-bottom: 0px;
+  }
+  .contact p {
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px;
+    margin-bottom: 0px;
   }
 }
 
@@ -394,4 +437,6 @@ h2.product-title:before {
     background: #e1e1e1;
     z-index: -1;
 }
+
+
 
