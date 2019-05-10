@@ -1,16 +1,9 @@
+
 body,
 p {
   font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
 }
-
-/*.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1170px;
-}*/
-
 
 .wrapper-white {
   display: flex;
@@ -45,7 +38,7 @@ p {
 }
 
 .tb-title {
-  font-size: 26px;
+  font-size: 35px;
   letter-spacing: 7.8px;
   margin: 16px 0 10px 0;
 }
@@ -65,7 +58,7 @@ p {
 .nav-link {
   color: #333333;
   line-height: normal;
-  font-size: 16px;
+  font-size: 17px;
   position: relative;
   font-weight: 300;
 }
@@ -89,7 +82,7 @@ h1 {
 }
 
 body {
-    font-size: 18px;
+    font-size: 20px;
     position: relative;
     line-height: 1.42857143;
     color: #333333;
@@ -118,7 +111,6 @@ div {
 
 .eternal .row-one-item, {
     position: relative;
-    margin-bottom: 10px;
 }
 
 img.tableau {
@@ -150,7 +142,7 @@ hr.vr {
 }
 
 .infos-mariage p {
-    font-size: 66%;
+    font-size: 19px;
     display: inline;
 }
 
@@ -183,7 +175,7 @@ hr.vr {
 .nav-link {
   color: rgb(51, 51, 51);
   line-height: normal;
-  font-size: 16px;
+  font-size: 17px;
   position: relative;
   padding: 0;
 }
@@ -228,6 +220,10 @@ hr.vr {
 .eternal .row-two-items {
     display: flex;
     margin-bottom: 10px;
+}
+
+.eternal .row-one-item {
+  margin-bottom: 55px;
 }
 
 .eternal .eternal-frame {
@@ -276,6 +272,7 @@ hr.vr {
     border-radius: 0;
     position: relative;
     padding: 13px 12px 10px 12px !important;
+      border-radius: 4px;
 }
 
 .eternal img {
@@ -291,7 +288,7 @@ h2 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-family: 'Yeseva One';
-    margin-top: 20px;
+    margin-top: 25px;
     line-height: 1.1;
     color: inherit;
     position: relative;
@@ -305,36 +302,76 @@ h2 {
     box-sizing: border-box;
 }
 
-.card {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    margin: 10px;
-    flex-grow: 1;
-    flex-basis: 250px;
-}
-
-.card img {
-    width: 239px;
-    border-radius: 2px;
-}
-
-.card p {
-  flex-grow: 1;
-  padding-left: 0px;
-  font-size: 15px;
-}
-
-.card  a {
-  margin-top: 10px;
-  font-size: 25px;
-}
-
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  position: relative;
 }
+
+
+
+.cover-card {
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  border-radius: 1px;
+  box-shadow: 0 0 10px rgda(0,0,0,0.2)
+  display: flex;
+}
+
+.hotel-card {
+    border-radius: 6px;
+    box-shadow: 0 15px 35px rgba(126,87,88,.1), 0 5px 15px rgba(0,0,0,.07);
+}
+
+.hotel-card .cover-card {
+    background: #6f6d6f;
+    background-size: cover;
+    height: 160px;
+    background-position: 50%;
+    border-radius: 6px 6px 0 0;
+}
+
+.hotel-card .content-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 0 0 6px 6px;
+    flex-direction: column;
+    padding: 17px;
+    z-index: 1;
+    text-align: center;
+}
+.hotel-card .content-card a {
+   color: #333333;
+   line-height: normal;
+   position: relative;
+   font-weight: 300;
+   padding-top: 10px;
+ }
+
+.hotel-card .content-card .card-link {
+  font-size: 20px;
+ }
+
+ .hotel-card .content-card .card-link-under {
+  font-size: 15px;
+ }
+
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+.cards {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 @media(min-width: 991px) {
   .nav-container {
@@ -399,25 +436,29 @@ h2 {
     display: block;
   }
 }
-  .eternal .row-two-items .row-item:first-child {
-    width: 100%;
-    margin-bottom: 10px;
-  }
+.eternal .row-two-items .row-item:first-child {
+  width: 100%;
+}
 
-  .eternal .row-two-items .row-item:last-child {
-    width: 100%;
-    margin-bottom: 0;
-  }
+.eternal .row-two-items .row-item:last-child {
+  width: 100%;
+  margin-bottom: 0;
+}
 
-  .eternal .row-two-items > .row-item > .row-two-items > .row-item {
-    margin-bottom: 0;
-  }
+.eternal .row-two-items > .row-item > .row-two-items > .row-item {
+  margin-bottom: 0;
+}
+
+
+#ou-se-garer{
+  display: flex;
 }
 
 h2.product-title {
     font-family: 'Yeseva One';
     position: relative;
     margin-bottom: 22px;
+    margin-top: 30px;
 }
 
 
@@ -438,6 +479,59 @@ h2.product-title:before {
     background: #e1e1e1;
     z-index: -1;
 }
+
+.cards2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  position: relative;
+}
+
+.transport-card {
+    border-radius: 6px;
+    border: 1px solid #2A2A2A;
+}
+
+.transport-card .cover-card {
+    background: #6f6d6f;
+    background-size: cover;
+    height: 160px;
+    background-position: 50%;
+    border-radius: 6px 6px 0 0;
+}
+
+.transport-card .content-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 0 0 6px 6px;
+    flex-direction: column;
+    padding: 17px;
+    z-index: 1;
+    text-align: center;
+}
+.transport-card .content-card a {
+   color: #333333;
+   line-height: normal;
+   position: relative;
+   font-weight: 300;
+   padding-top: 10px;
+ }
+
+.transport-card .content-card .card-link {
+  font-size: 20px;
+ }
+
+ .transport-card .content-card .card-link-under {
+  font-size: 15px;
+ }
+
+
+
+
+
+
+
 
 
 
