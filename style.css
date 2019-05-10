@@ -3,6 +3,8 @@ body,
 p {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: lighter;
+  font-size: 17px;
+  font-weight: 100;
 }
 
 .wrapper-white {
@@ -292,6 +294,7 @@ h2 {
     line-height: 1.1;
     color: inherit;
     position: relative;
+    font-size: 25px;
 }
 
 .eternal1 {
@@ -482,7 +485,7 @@ h2.product-title:before {
 
 .cards2 {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   position: relative;
 }
