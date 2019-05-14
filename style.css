@@ -342,6 +342,7 @@ h2 {
   border-radius: 1px;
   box-shadow: 0 0 10px rgda(0,0,0,0.2)
   display: flex;
+  justify-content: space-around;
 }
 
 .hotel-card {
@@ -372,14 +373,15 @@ h2 {
   font-size: 14px;
   margin-bottom: 5px;
   font-family: 'Josefin Sans', sans-serif;
-  color:black;
+  color:#6F6D6F;
+
  }
 
  .hotel-card .content-card p:hover {
   color: black;
  }
 
- .card-link:hover .hotel-card {
+ .card-grid-link:hover .hotel-card {
     box-shadow: 0 15px 35px rgba(126,87,88,.3), 0 5px 15px rgba(0,0,0,.07);
     transform: translateY(-2px);
 }
@@ -500,11 +502,11 @@ h2.product-title:before {
    padding-top: 10px;
  }
 
-.transport-card .content-card .card-link {
+.transport-card .content-card .card-grid-link {
   font-size: 20px;
  }
 
- .transport-card .content-card .card-link-under {
+ .transport-card .content-card .card-grid-link-under {
   font-size: 15px;
  }
 
