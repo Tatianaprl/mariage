@@ -175,6 +175,7 @@ hr.vr {
     -webkit-box-align: center;
     padding: 15px 0;
     grid-gap: 50px;
+    margin-top: 50px;
 }
 
 @media (max-width: 500px) {
@@ -247,6 +248,7 @@ hr.vr {
     justify-content: space-around;
     padding: 40px;
     margin-bottom: 0px;
+    min-height: 100%
 }
 
 .eternal .eternal-frame h2 {
@@ -313,7 +315,6 @@ h2 {
 
 .eternal {
     box-sizing: border-box;
-    padding-bottom: 50px;
 }
 
 .cards {
@@ -321,7 +322,6 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
   position: relative;
-  padding-bottom: 50px;
 }
 
 
@@ -367,21 +367,22 @@ h2 {
     z-index: 1;
     text-align: center;
 }
-.hotel-card .content-card a {
-   color: #333333;
-   line-height: normal;
-   position: relative;
-   font-weight: 300;
-   padding-top: 10px;
+
+.hotel-card .content-card p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-family: 'Josefin Sans', sans-serif;
+  color:black;
  }
 
-.hotel-card .content-card .card-link {
-  font-size: 20px;
+ .hotel-card .content-card p:hover {
+  color: black;
  }
 
- .hotel-card .content-card .card-link-under {
-  font-size: 15px;
- }
+ .card-link:hover .hotel-card {
+    box-shadow: 0 15px 35px rgba(126,87,88,.3), 0 5px 15px rgba(0,0,0,.07);
+    transform: translateY(-2px);
+}
 
 
 @media (max-width: 768px) {
@@ -417,6 +418,7 @@ h2 {
     display: block;
   }
 }
+
 .eternal .row-two-items .row-item:first-child {
   width: 100%;
 }
@@ -431,7 +433,7 @@ h2 {
 }
 
 
-#ou-se-garer{
+#ou-se-garer {
   display: flex;
 }
 
@@ -508,7 +510,9 @@ h2.product-title:before {
 
 
  h3 {
-  font-size: 20px;
+  font-size: 17px;
+  font-family: 'Josefin Sans', sans-serif;
+  color:black;
  }
 
 
@@ -531,13 +535,11 @@ h2.product-title:before {
   }
 }
 
-
 .cards3 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   position: relative;
-  padding-bottom: 50px;
 }
 
 
@@ -560,9 +562,4 @@ h2.product-title:before {
   }
 }
 
-
-.card-link:hover .hotel-card{
-    box-shadow: 0 15px 35px rgba(126,87,88,.3), 0 5px 15px rgba(0,0,0,.07);
-    transform: translateY(-2px);
-}
 
