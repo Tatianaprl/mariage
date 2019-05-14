@@ -3,8 +3,11 @@ body,
 p {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: lighter;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 100;
+}
+body > div:nth-child(1) > div.giftlist-widget__content > div:nth-child(1) > div > h2 {
+  font-family: 'Yeseva One' !important;
 }
 
 .wrapper-white {
@@ -160,17 +163,25 @@ hr.vr {
 }
 
 .footer p {
-    font-size: 80%;
-    display: inline;
+    font-size: 15px;
     font-weight: 100;
 }
 
 .footer {
     border-top: 1px solid #333333;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: space-around;
     -webkit-box-align: center;
     padding: 15px 0;
+    grid-gap: 50px;
+}
+
+@media (max-width: 500px) {
+.footer {
+    grid-template-columns: 1fr;
+    grid-gap: 0px;
+  }
 }
 
 
@@ -224,12 +235,9 @@ hr.vr {
     margin-bottom: 10px;
 }
 
-.eternal .row-one-item {
-  margin-bottom: 55px;
-}
 
 .eternal .eternal-frame {
-    border: 1px solid #2A2A2A;
+    border: 1px solid #FBE3E2;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -254,7 +262,7 @@ hr.vr {
 
 .eternal .eternal-frame p {
     text-align: center;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 100;
 }
 
@@ -274,12 +282,14 @@ hr.vr {
     border-radius: 0;
     position: relative;
     padding: 13px 12px 10px 12px !important;
-      border-radius: 4px;
+    border-radius: 4px;
 }
 
 .eternal img {
 
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     border: 0
 }
 
@@ -303,6 +313,7 @@ h2 {
 
 .eternal {
     box-sizing: border-box;
+    padding-bottom: 50px;
 }
 
 .cards {
@@ -310,9 +321,19 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
   position: relative;
+  padding-bottom: 50px;
 }
 
 
+.pictures-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.pictures-grid .last {
+  flex-grow:1;
+}
 
 .cover-card {
   background-size: cover;
@@ -376,63 +397,20 @@ h2 {
 }
 
 
-@media(min-width: 991px) {
-  .nav-container {
-    margin: 0 100px ;
+  @media(min-width: 991px) {
+    .nav-container {
+      margin: 0 100px ;
+    }
   }
-  .rappel p {
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    -webkit-box-align: center;
-    align-items: center;
-    justify-content: space-around;
-    padding: 13px;
-    margin-bottom: 0px;
-  }
-  .contact p {
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    -webkit-box-align: center;
-    justify-content: space-around;
-    padding: 0px;
-    margin-bottom: 0px;
-  }
-}
 
-@media(max-width: 768px) {
-  .nav-container {
-    margin-top: 10 -5px;
+  @media(max-width: 768px) {
+    .nav-container {
+      margin-top: 10 -5px;
+    }
+    .nav-link {
+      padding: 8px;
+    }
   }
-  .nav-link {
-    padding: 8px;
-  }
-  .rappel p {
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    -webkit-box-align: center;
-    align-items: center;
-    justify-content: space-around;
-    padding: 13px;
-    margin-bottom: 0px;
-  }
-  .contact p {
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    -webkit-box-align: center;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0px;
-    margin-bottom: 0px;
-  }
-}
 
 @media(max-width: 768px) {
   .eternal .row-two-items {
@@ -491,8 +469,7 @@ h2.product-title:before {
 }
 
 .transport-card {
-    border-radius: 6px;
-    border: 1px solid #2A2A2A;
+    border: 1px solid #FBE3E2;
 }
 
 .transport-card .cover-card {
@@ -511,7 +488,7 @@ h2.product-title:before {
     flex-direction: column;
     padding: 17px;
     z-index: 1;
-    text-align: center;
+    text-align: left;
 }
 .transport-card .content-card a {
    color: #333333;
@@ -530,11 +507,62 @@ h2.product-title:before {
  }
 
 
+ h3 {
+  font-size: 20px;
+ }
 
 
+@media (max-width: 768px) {
+  .cards2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+.cards2 {
+    grid-template-columns: 1fr;
+  }
+}
 
 
+@media(min-width: 991px) {
+  .cards2 {
+    margin: 0 0px ;
+  }
+}
 
 
+.cards3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  position: relative;
+  padding-bottom: 50px;
+}
 
+
+@media (max-width: 768px) {
+  .cards3 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+.cards3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media(min-width: 991px) {
+  .cards3 {
+    margin: 0 0px ;
+  }
+}
+
+
+.card-link:hover .hotel-card{
+    box-shadow: 0 15px 35px rgba(126,87,88,.3), 0 5px 15px rgba(0,0,0,.07);
+    transform: translateY(-2px);
+}
 
