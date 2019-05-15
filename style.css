@@ -386,6 +386,14 @@ h2 {
     transform: translateY(-2px);
 }
 
+.cards a {
+  text-decoration: none;
+}
+
+.cards3 a {
+  text-decoration: none;
+}
+
 
 @media (max-width: 768px) {
   .cards {
@@ -542,6 +550,7 @@ h2.product-title:before {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   position: relative;
+  text-decoration: none;
 }
 
 
